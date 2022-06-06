@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 60px auto 0;
+  width: 80%;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:first-child {
+  font-weight: 700;
+  border-top: none;
+}
+
+li:nth-child(2) {
+  padding: 0 20px 0 0;
+}
+
+li:last-child {
+  background-color: rgb(220, 224, 224);
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+}
+
+li:last-child p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.add_to_list input {
+  padding: 20px;
+}
+
+.task_line .task_unit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.task_line .delete_outline {
+  display: none;
+}
+
+.task_line .delete_outline.active {
+  display: inline;
+}
+
+.task_line .more_vert {
+  display: none;
+}
+
+.task_line .more_vert.active {
+  display: inline;
+}
+
+.task_unit .description.done {
+  text-decoration: line-through;
+}
+
+.material-icons-outlined {
+  height: min-content;
+  cursor: pointer;
+  font-size: 18px;
+  color: gray;
+}
+
+input[type=text] {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+}
+
+li[id^="drg"].insert {
+  border-bottom: 2px solid gray;
+}
